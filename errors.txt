@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 206: invalid non-printable character U+00A0
-        config.tts_voice = "english_rp"
-                         ^
+File "game/p1_a4.rpy", line 30: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    voice "voz43.mp3"
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Mar 21 11:01:20 2024
+Mon Apr  8 23:10:02 2024

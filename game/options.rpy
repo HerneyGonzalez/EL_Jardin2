@@ -48,7 +48,7 @@ define build.name = "DesterradosElJardin"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = False
+define config.has_voice = True
 
 
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
@@ -62,7 +62,7 @@ define config.has_voice = False
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "audio/black-rose-161524.mp3"
+define config.main_menu_music = "black-rose-161524.mp3"
 
 ## Transiciones ################################################################
 ##
@@ -199,7 +199,7 @@ init python:
     build.documentation('*.txt')
 
     if renpy.windows:
-        config.tts_voice = "Mark"
+        config.tts_voice = "Raul"
     elif renpy.macintosh:
         config.tts_voice = "Alex"
     #block of code to run
