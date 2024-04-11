@@ -97,7 +97,7 @@ define gui.main_menu_text_color = "#000000"
 ## línea cada vez.
 
 ## Altura de la caja de texto que contiene el diálogo.
-define gui.textbox_height = 278
+define gui.textbox_height = 310
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
@@ -442,8 +442,8 @@ init python:
 
         ## Ajusta la colocación de la caja de texto.
         gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
+        gui.name_xpos = 195
+        gui.dialogue_xpos = 180
         gui.dialogue_width = 1650
 
         ## Cambia el tamaño y espaciado de varios elementos.

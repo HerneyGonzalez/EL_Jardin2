@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0)
 
 style namebox:
     xpos gui.name_xpos
@@ -247,7 +247,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.96
 
             textbutton _("Atrás") action Rollback()
             textbutton _("Historial") action ShowMenu('history')
@@ -1418,7 +1418,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.95
 
             textbutton _("Atrás") action Rollback()
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
