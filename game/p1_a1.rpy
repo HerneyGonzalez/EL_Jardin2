@@ -3,7 +3,6 @@ label p1_a1:
     voice "voz1.mpeg"
     play music "audio/triste.mp3"
     "Cuando tierno uno cree que la vida son puras rosas, pero cuando va creciendo y viviendo, entiende que sólo son puras espinas. "
-    play sound "disparo.mp3"
     voice "voz2.mpeg"
     car "(Cuando llegué al uso de razón mataron a don Raúl. Nunca lo olvidaré.)"
     play sound "audio/disparo.mp3"
