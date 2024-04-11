@@ -140,6 +140,7 @@ label memo_game_lose:
 label memo_game_win:
     hide screen memo_scr
     $ renpy.pause(0.1, hard=True)
+    voice "vozfinal.mp3"
     centered "{size=80}{b}Al menos hay algunas cosas \n positivas entre mis recuerdos{/b}{/size}"
     return
 
