@@ -1,12 +1,11 @@
 label p1_a1:
 
-    voice "voz1.mpeg"
-    play music "audio/triste.mp3" volume 0.1
+    voice "voz1.mp3" 
+    play music "audio/triste.mp3" volume 0.5
     "Cuando tierno uno cree que la vida son puras rosas, pero cuando va creciendo y viviendo, entiende que sólo son puras espinas. "
-    play voice  "carmen.mp3"
-    voice  "voz2.mpeg" 
+    voice  "voz2.mp3" 
     carp "(Cuando llegué al uso de razón mataron a don Raúl. Nunca lo olvidaré.)"
-    play sound "audio/disparo.mp3" volume 0.2
+    play sound "audio/disparo.mp3" volume 0.4
     "*sonido de disparo*"
     stop sound
 
@@ -38,7 +37,7 @@ label p1_a1:
 
     voice "voz6.mp3"
     papa "Que bendición, que pude traer musicos desde Chaparral"
-    play music "feliz.mp3" volume 0.3
+    play music "feliz.mp3" volume 0.5
     hide papa_formal
     "*se escucha musica alegre*"
     voice "voz7.mp3"
@@ -50,12 +49,12 @@ label p1_a1:
     "*sonidos de gente corriendo*"
     voice "voz9.mp3"
     raul "No me mate.."
-    play sound "audio/disparo.mp3" volume 0.2
+    play sound "audio/disparo.mp3" volume 0.5
     "*sonido de disparo*"
     stop sound
     stop music
 
-    play music "audio/triste.mp3" volume 0.1
+    play music "audio/triste.mp3" volume 0.5
     voice "voz10.mp3"
     carp "(Entraron unos hombres armados y le dispararon a don Raúl)"
     voice "voz11.mp3"
