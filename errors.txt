@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/p1_a4.rpy", line 30: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    voice "voz43.mp3"
-    ^
+File "game/p3_a7.rpy", line 27: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Apr  8 23:10:02 2024
+Wed Apr 17 21:33:03 2024

@@ -6,7 +6,7 @@ label p2_a2:
     with dissolve
 
     voice "voz84.mp3"
-    "Entonces salimos a Chaparral y en la plaza."
+    carp "Entonces salimos a Chaparral y en la plaza."
 
     show alvaro
     

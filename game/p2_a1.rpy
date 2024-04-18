@@ -7,11 +7,11 @@ label p2_a1:
     with dissolve
 
     voice "voz74.mp3"
-    "Ya estando de 18 años en Armenia, mi papá fue a recogerme."
+    carp "Ya estando de 18 años en Armenia, mi papá fue a recogerme."
     voice "voz75.mp3"
-    "El todavía tenía la misma mirada triste. El hecho de que yo estuviera atendiendo en una papelería, no le gustó. "
+    carp "El todavía tenía la misma mirada triste. El hecho de que yo estuviera atendiendo en una papelería, no le gustó. "
     voice "voz76.mp3"
-    "Su niña consentida no tenía por qué estar atendiendo a nadie y para ajustar, estar viviendo en una pensión sucia y hasta fea."
+    carp "Su niña consentida no tenía por qué estar atendiendo a nadie y para ajustar, estar viviendo en una pensión sucia y hasta fea."
 
     
     show papa_formal
@@ -22,22 +22,22 @@ label p2_a1:
     papa "Vuelvase conmigo para que pueda seguir estudiando o para que aprenda algún arte. "
 
     stop music
-    play music "audio/feliz.mp3"
+    play music "audio/feliz.mp3" volume 0.1
     scene bg_casa_papa
 
     voice "voz78.mp3"
-    "Volví a la finca de San José de las Hermosas. Mis hermanos habían crecido y estaban dedicados a sus negocios."
+    carp "Volví a la finca de San José de las Hermosas. Mis hermanos habían crecido y estaban dedicados a sus negocios."
     voice "voz79.mp3"
-    "Ahí todo el tiempo escuchaba hablar de un tal Álvaro"
+    carp "Ahí todo el tiempo escuchaba hablar de un tal Álvaro"
     voice "voz80.mp3"    
-    "que traía el mercado, que ordeñaba, que arreglaba los caballos, que llevaba la leche a Chaparral, que Álvaro para esto y para lo otro." 
+    carp "que traía el mercado, que ordeñaba, que arreglaba los caballos, que llevaba la leche a Chaparral, que Álvaro para esto y para lo otro." 
     voice "voz81.mp3"
-    "Yo ya llevaba un mes en la finca y del Álvaro sólo conocía el nombre."
+    carp "Yo ya llevaba un mes en la finca y del Álvaro sólo conocía el nombre."
     voice "voz82.mp3"
-    "Mi papá me dijo que para que no perdiera el tiempo me iba a matricular en un curso de modistería, mientras me ponía a estudiar otra vez. "
+    carp "Mi papá me dijo que para que no perdiera el tiempo me iba a matricular en un curso de modistería, mientras me ponía a estudiar otra vez. "
 
     voice "voz83.mp3"
-    "Se me hizo tarde para ir a la plaza.\n Tengo que salir a toda"
+    carp "Se me hizo tarde para ir a la plaza.\n Tengo que salir a toda"
 
 return
 

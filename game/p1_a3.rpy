@@ -1,16 +1,16 @@
 label p1_a3:
-    play music "audio/feliz.mp3"
+    play music "audio/feliz.mp3" volume 0.2
     scene bg_casa_papa
     show car_n_bestido
     show car_n_bestido:
         subpixel True pos (0.2, 1.1) xzoom 0.9 yzoom 0.9 
     with dissolve
     voice "voz26.mp3"
-    car "(A pesar de mi pesadilla, de niña vivía muy bien porque yo era la mirada misma de mi papá.)"
+    carp "(A pesar de mi pesadilla, de niña vivía muy bien porque yo era la mirada misma de mi papá.)"
     voice "voz27.mp3"
-    car "(Él me hablaba con los ojos y yo ya entendía lo que él no decía con la boca. Éramos muy unidos. A veces sentía que éramos la misma persona.)"
+    carp "(Él me hablaba con los ojos y yo ya entendía lo que él no decía con la boca. Éramos muy unidos. A veces sentía que éramos la misma persona.)"
     voice "voz28.mp3"
-    car "(Era un hombre bueno en su casa y con los vecinos, a pesar de que la Violencia lo había marcado muy adentro.)"
+    carp "(Era un hombre bueno en su casa y con los vecinos, a pesar de que la Violencia lo había marcado muy adentro.)"
 
     show papa_formal
     

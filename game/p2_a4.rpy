@@ -1,9 +1,9 @@
 label p2_a4:
     scene bg_casa_papa
     voice "voz101.mp3"
-    "Desde ahi el ya me habló seriamente, y entonces las conversaciones se volvieron visitas de todos los días."
+    carp "Desde ahi el ya me habló seriamente, y entonces las conversaciones se volvieron visitas de todos los días."
     stop music
-    play music"audio/drama.mp3"
+    play music"audio/drama.mp3" volume 0.2
     show car_n_-18
     show car_n_-18:
         subpixel True pos (0.2, 1.1) xzoom 0.9 yzoom 0.9 
@@ -17,11 +17,11 @@ label p2_a4:
     with dissolve
 
     voice "voz102.mp3"
-    "Cuando empezaron a preguntarme en la casa que si yo me había cuadrado con Álvaro, yo decía que eso era por molestar un rato" 
+    carp "Cuando empezaron a preguntarme en la casa que si yo me había cuadrado con Álvaro, yo decía que eso era por molestar un rato" 
     voice "voz102a.mp3"
-    "pero hoy en dia ese rato se convirtió en diecisiete años y seis hijos."
+    carp "pero hoy en dia ese rato se convirtió en diecisiete años y seis hijos."
     voice "voz103.mp3"
-    "el un dia me propuso algo un poco esperado para mi"    
+    carp "el un dia me propuso algo un poco esperado para mi"    
 
     show alvaro
     
@@ -41,11 +41,11 @@ return
 
 label si_me_voy:
 voice "voz105.mp3"
-"Yo estaba muy aburrida porque mi mamá cantaleteaba a todo momento"
+carp "Yo estaba muy aburrida porque mi mamá cantaleteaba a todo momento"
 voice "voz106.mp3"
-"y como yo sabía vivir sola y le había perdido el misterio a irme de la casa"
+carp "y como yo sabía vivir sola y le había perdido el misterio a irme de la casa"
 voice "voz107.mp3"
-"me fui con Álvaro. "
+carp "me fui con Álvaro. "
 hide alvaro
 with dissolve
 hide car_n_-18

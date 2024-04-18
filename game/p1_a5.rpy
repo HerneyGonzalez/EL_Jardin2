@@ -1,6 +1,6 @@
 label p1_a5:
     stop music
-    play music "audio/triste.mp3"
+    play music "audio/triste.mp3" volume 0.1
     scene bg_casa_papa_gris
     show car_n_bestido
     show car_n_bestido:

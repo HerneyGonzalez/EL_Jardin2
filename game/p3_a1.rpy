@@ -15,13 +15,13 @@ label p3_a1:
     voice "voz111.mp3"
     mama "COMO CHINA MALPARIDA??!!!!"
     voice "voz112.mp3"
-    "Cuando le dije a mi mamá, cogió una correa de mi papá y me dio dos lapos por las piernas, como si yo tuviera otra vez ocho años. "
-    play sound "audio/latigo.mp3"
+    carp "Cuando le dije a mi mamá, cogió una correa de mi papá y me dio dos lapos por las piernas, como si yo tuviera otra vez ocho años. "
+    play sound "audio/latigo.mp3" volume 0.3
     "*sonido de azoteos*"
     voice "voz113.mp3"
-    "Me dejó toda quemada, bien marcados los azotes y eso me calentó la sangre de todo el cuerpo. "
+    carp "Me dejó toda quemada, bien marcados los azotes y eso me calentó la sangre de todo el cuerpo. "
     voice "voz114.mp3"
-    "Sin embargo, el hombre me propuso y yo dispuse. "
+    carp "Sin embargo, el hombre me propuso y yo dispuse. "
 
 return
 

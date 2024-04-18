@@ -8,6 +8,7 @@ label auto_chapter_save:
 # Declara los personajes usados en el juego como en el ejemplo:
 
 define car = Character("Carmen", color="#aa2525")
+define carp = Character("Pensamientos de Carmen", color="#aa2525")
 define papa = Character("Papá", color="#007a33")
 define raul = Character("Don Raul", color="#000000")
 define mama = Character("Mamá", color="#7108ad")

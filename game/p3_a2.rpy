@@ -1,8 +1,8 @@
 label p3_a2:
     scene bg_casa_ibague
-    play music "audio/feliz.mp3"
+    play music "audio/feliz.mp3" volume 0.2
     voice "voz115.mp3"
-    "Desde ese día empezamos a vivir juntos. Llegamos a Ibagué y hablamos con un cura."
+    carp "Desde ese día empezamos a vivir juntos. Llegamos a Ibagué y hablamos con un cura."
 
     show cura
     show cura:
@@ -35,7 +35,7 @@ label p3_a2:
     voice "voz121.mp3"
     cura "Pecadores!!, ¿a dónde van a parar? si no se casan por la Iglesia, no tendran hijos según la ley de Dios."
     voice "voz122.mp3"
-    " Total, con tanta pendejada dejamos la cosa así y el matrimonio se refundió. "
+    carp " Total, con tanta pendejada dejamos la cosa así y el matrimonio se refundió. "
 
 
 return
