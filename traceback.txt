@@ -1,30 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 30, in script call
-    call p1_a1 from _call_p1_a1
-  File "game/p1_a1.rpy", line 7, in script
-    $ _wait_for_voice_end()
-  File "game/p1_a1.rpy", line 7, in <module>
-    $ _wait_for_voice_end()
-NameError: name '_wait_for_voice_end' is not defined
+  File "game/script.rpy", line 62, in script call
+    call mini_runner from _call_mini_runner
+  File "game/mini_runner.rpy", line 228, in script
+    call screen feed_the_dragon
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/mini_runner.rpy", line 188, in execute
+    screen feed_the_dragon():
+  File "game/mini_runner.rpy", line 188, in execute
+    screen feed_the_dragon():
+  File "game/mini_runner.rpy", line 210, in execute
+    imagebutton idle up_button_img action Function(move_up) xpos 50 ypos 400
+Exception: Not a displayable: <Surface(100x50x32)>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 30, in script call
-    call p1_a1 from _call_p1_a1
-  File "game/p1_a1.rpy", line 7, in script
-    $ _wait_for_voice_end()
-  File "C:\Users\Santiago Diaz\Desktop\Usco\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Santiago Diaz\Desktop\Usco\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/p1_a1.rpy", line 7, in <module>
-    $ _wait_for_voice_end()
-NameError: name '_wait_for_voice_end' is not defined
+  File "game/script.rpy", line 62, in script call
+    call mini_runner from _call_mini_runner
+  File "game/mini_runner.rpy", line 228, in script
+    call screen feed_the_dragon
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\exports.py", line 3413, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/mini_runner.rpy", line 188, in execute
+    screen feed_the_dragon():
+  File "game/mini_runner.rpy", line 188, in execute
+    screen feed_the_dragon():
+  File "game/mini_runner.rpy", line 210, in execute
+    imagebutton idle up_button_img action Function(move_up) xpos 50 ypos 400
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ui.py", line 957, in _imagebutton
+    return renpy.display.behavior.ImageButton(
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\behavior.py", line 1241, in __init__
+    idle_=renpy.easy.displayable(idle_image),
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\easy.py", line 145, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: <Surface(100x50x32)>
 
-Windows-10-10.0.19041 AMD64
-Ren'Py 8.2.1.24030407
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.2.0.24012702
  
-Wed Apr 10 21:57:12 2024
+Fri May  3 16:37:30 2024

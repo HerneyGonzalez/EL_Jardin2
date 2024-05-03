@@ -4,6 +4,8 @@ label mini_runner:
 
         import random
 
+
+
         class FeedtheDragonDisplayable(renpy.Displayable):
             def __init__(self):
                 renpy.Displayable.__init__(self)
@@ -161,6 +163,14 @@ label mini_runner:
         def display_player_lives(st, at):
             return Text(_("Vidas: ") + "%d" % feed_the_dragon.player_lives, size=40, color="#00cc00", outlines=[ (4, "#006600", 0, 0) ]), .1
 
+        def move_up():
+            feed_the_dragon.key_pressed = "up"
+
+        def move_down():
+            feed_the_dragon.key_pressed = "down"
+
+        
+
     default feed_the_dragon = FeedtheDragonDisplayable()
 
     screen feed_the_dragon():
@@ -183,7 +193,12 @@ label mini_runner:
             color "#00cc00"
             outlines [ (4, "#006600", 0, 0) ]
             #font "fonts\Mali\Mali-Bold.ttf"
+        
+        # Botón para mover hacia arriba
+        imagebutton idle "images/up_button.png" action Function(move_up) xpos 50 ypos 185 
 
+        # Botón para mover hacia abajo
+        imagebutton idle "images/down_button.png" action Function(move_down) xpos 50 ypos 640
     label play_feed_the_dragon:
 
         #window hide  # Ocultar la ventana y el menú rápido mientras se juega a Feed the Dragon
