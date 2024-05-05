@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/p1_a1.rpy", line 3: expected end of line
-    voice "voz1.mp3" volume 1
+File "game/options.rpy", line 1: expected statement.
+    config.developer = True
                      ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Thu Apr 18 11:13:44 2024
+Sat May  4 11:44:51 2024

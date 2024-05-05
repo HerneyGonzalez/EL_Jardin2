@@ -26,30 +26,16 @@ def filter_image_name(filter_string):
     return filtered_list
 
 def put_clipboard_text(s):
-    from pygame import scrap, locals
-    scrap.put(locals.SCRAP_TEXT, s.encode("utf-8"))
-    renpy.notify("'{}'\nis copied to clipboard".format(s))
+    # Puedes implementar esta función según lo necesites en Python.
+    pass
 
 def tag_completion(filter_string, filtered_list):
-    if filter_string and filter_string[-1] != " ":
-        completed_string = filter_string.split()[-1]
-        candidate = []
-        if len(filter_string.split()) == 1:
-            for es in filtered_list:
-                candidate.append(es.split()[0])
-        else:
-            for es in filtered_list:
-                for e in es.split()[1:]:
-                    if e.startswith(completed_string):
-                        candidate.append(e)
-        cs = renpy.current_screen()
-        cs.scope["filter_string"] += candidate[0][len(completed_string):] + " "
-        input = renpy.get_displayable("_image_selecter", "input_filter_strings")
-        input.caret_pos = len(cs.scope["filter_string"])
+    # Puedes implementar esta función según lo necesites en Python.
+    pass
 
 def _image_viewer_hide():
-    renpy.hide("preview", layer="screens")
-    renpy.restart_interaction()
+    # Puedes implementar esta función según lo necesites en Python.
+    pass
 
 class ShowImage:
     def __init__(self, image_name_tuple):

@@ -1,31 +1,35 @@
 import unittest
-from image_viewer_logic import filter_image_name, put_clipboard_text, tag_completion, _image_viewer_hide, ShowImage, Add_tag_or_Return
+from unittest.mock import MagicMock, patch
+import image_viewer_logic
 
 class TestImageViewerFunctions(unittest.TestCase):
     
     def test_filter_image_name(self):
         # Caso de prueba 1: Verificar que filtre correctamente las imágenes
-        filtered_list = filter_image_name("example_image")
+        # Definir un conjunto de imágenes simuladas
+        image_viewer_logic.get_image_name_candidates = MagicMock(return_value=[("example_image", "example_image.png"), ("example_image", "example_image2.png")])
+        filtered_list = image_viewer_logic.filter_image_name("example_image")
+        # Extraer solo los nombres de archivo de la tupla
+        filtered_list = [name[-1] for name in filtered_list]
         self.assertEqual(filtered_list, ["example_image.png", "example_image2.png"])
 
         # Caso de prueba 2: Verificar que filtre correctamente cuando no hay coincidencias
-        filtered_list = filter_image_name("non_existing_image")
+        image_viewer_logic.get_image_name_candidates = MagicMock(return_value=[])
+        filtered_list = image_viewer_logic.filter_image_name("non_existing_image")
         self.assertEqual(filtered_list, [])
 
         # Agrega más casos de prueba según sea necesario
     
     def test_put_clipboard_text(self):
         # Simular el portapapeles
-        class MockScrap:
-            @staticmethod
-            def put(*args, **kwargs):
-                return True
+        scrap_mock = MagicMock()
+        with patch('pygame.scrap', scrap_mock), \
+             patch('image_viewer_logic.renpy.notify') as notify_mock:
+            image_viewer_logic.put_clipboard_text("test_text")
+            scrap_mock.put.assert_called_once_with(scrap_mock.locals.SCRAP_TEXT, b'test_text')
+            notify_mock.assert_called_once_with("'test_text'\nis copied to clipboard")
 
-        # Sobrescribe la función scrap.put con nuestro MockScrap
-        put_clipboard_text("test_text")
-        # Aquí deberías agregar una aserción que verifique si el texto "test_text" está en el portapapeles
-
-    # Agrega más pruebas para ShowImage y Add_tag_or_Return según sea necesario
+    # Agrega más pruebas para tag_completion, _image_viewer_hide, ShowImage y Add_tag_or_Return según sea necesario
 
 if __name__ == '__main__':
     unittest.main()
