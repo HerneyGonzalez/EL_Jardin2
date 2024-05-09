@@ -20,7 +20,6 @@ class TestMemoria(unittest.TestCase):
 
     def test_game_loop(self):
     # Simula el bucle principal del juego
-    # Nota: Esta es una simulación básica y no cubre todas las posibles ramas del código
 
     # Llama a la función cards_init() para inicializar las cartas
         cards_init()

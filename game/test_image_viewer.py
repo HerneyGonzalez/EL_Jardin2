@@ -17,8 +17,6 @@ class TestImageViewerFunctions(unittest.TestCase):
         image_viewer_logic.get_image_name_candidates = MagicMock(return_value=[])
         filtered_list = image_viewer_logic.filter_image_name("non_existing_image")
         self.assertEqual(filtered_list, [])
-
-        # Agrega más casos de prueba según sea necesario
     
     def test_put_clipboard_text(self):
         # Simular el portapapeles
@@ -28,8 +26,5 @@ class TestImageViewerFunctions(unittest.TestCase):
             image_viewer_logic.put_clipboard_text("test_text")
             scrap_mock.put.assert_called_once_with(scrap_mock.locals.SCRAP_TEXT, b'test_text')
             notify_mock.assert_called_once_with("'test_text'\nis copied to clipboard")
-
-    # Agrega más pruebas para tag_completion, _image_viewer_hide, ShowImage y Add_tag_or_Return según sea necesario
-
 if __name__ == '__main__':
     unittest.main()
