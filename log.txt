@@ -1,78 +1,2942 @@
-2024-05-04 16:44:51 UTC
-Windows-10-10.0.22000
+2024-05-09 07:30:32 UTC
+Windows-10-10.0.19041
 Ren'Py 8.2.1.24030407
 
-Early init took 0.19s
-Loading error handling took 0.12s
-Loading script took 0.49s
-Loading save slot metadata took 0.04s
+Early init took 0.11s
+Loading error handling took 0.04s
+Loading script took 0.26s
+Loading save slot metadata took 0.08s
 Loading persistent took 0.00s
-
-File "game/options.rpy", line 1: expected statement.
-    config.developer = True
-                     ^
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.26s
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.45s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.20s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon(TM) Graphics'
-Version: b'4.6.14761 Compatibility Profile Context 21.30.44 30.0.13044.0'
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 37, in script
+    show screen mini_clicker_explain
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen mini_clicker_explain is not known.
+
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    show screen mini_clicker_explain
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen mini_clicker_explain is not known.
+
+Resetting cache.
+Early init took 30.49s
+Loading error handling took 0.04s
+Loading script took 0.23s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.05s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 1826.51s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.20s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 37, in script
+    show screen mini_clicker_explain
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen mini_clicker_explain is not known.
+
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    show screen mini_clicker_explain
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen mini_clicker_explain is not known.
+
+Resetting cache.
+Early init took 1906.07s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.17s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.05s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 46.12s
-Loading error handling took 0.07s
-Loading script took 0.41s
-Loading save slot metadata took 0.09s
+Early init took 1954.96s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.12s
-Loading analysis data took 0.06s
+Running init code took 0.05s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\equipo\\AppData\\Roaming/RenPy/backups\\Desterrados_El_Jardin':
-Dump and make backups took 0.14s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1965.90s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+
+The label mini_clicker_explain is defined twice, at File "game/mini_clicker_explain.rpy", line 1:
+label mini_clicker_explain: 
+and File "game/script.rpy", line 37:
+    call mini_clicker_explain from mini_clicker_explain
+
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1979.72s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2046.79s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.11s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.05s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2053.30s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2093.06s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2124.94s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
 Cleaning stores took 0.00s
 Init translation took 0.08s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.06s
-Prepare screens took 0.23s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.16s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/script.rpy", line 37, in script
+    show screen explicacion_minijuego
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen explicacion_minijuego is not known.
+
+
+While running game code:
+  File "game/script.rpy", line 37, in script
+    show screen explicacion_minijuego
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen explicacion_minijuego is not known.
+
+Resetting cache.
+Early init took 2142.06s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Interface start took 0.08s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon(TM) Graphics'
-Version: b'4.6.14761 Compatibility Profile Context 21.30.44 30.0.13044.0'
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Resetting cache.
+Early init took 2265.55s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.06s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2272.95s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.30s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2315.85s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.37s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2326.81s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2336.26s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2343.15s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2358.66s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2364.61s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 2531.14s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.18s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.08s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2622.66s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.43s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2630.19s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2656.33s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2668.83s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2673.66s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2702.78s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/script.rpy", line 53, in script call
+    call mini_finder from _call_mini_finder
+  File "game/mini_finder.rpy", line 31, in script
+    with dissolve
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\transition.py", line 384, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\im.py", line 626, in render
+    return cache.get(self, render=True)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\im.py", line 309, in get
+    surf = image.load()
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\im.py", line 761, in load
+    raise e
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\im.py", line 711, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/explain_mini/explain_mini_finder.jpg'.
+
+While loading <renpy.display.im.Image object ('images/explain_mini/explain_mini_finder.jpg') at 0x0000000005bfc220>:
+  File "game/script.rpy", line 53, in script call
+    call mini_finder from _call_mini_finder
+  File "game/mini_finder.rpy", line 31, in script
+    with dissolve
+OSError: Couldn't find file 'images/explain_mini/explain_mini_finder.jpg'.
+Resetting cache.
+Early init took 2741.37s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2790.46s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2812.07s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.14s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.07s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2824.66s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.14s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.06s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 2837.15s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 3543.62s
+Loading error handling took 0.03s
+Loading script took 0.26s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 4539.94s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.05s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 4561.54s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 4577.04s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 4583.47s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.32s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.03s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 5635.59s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.06s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 5706.20s
+Loading error handling took 0.02s
+Loading script took 0.26s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 5724.91s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.37s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.04s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 5890.96s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.20s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 5987.83s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 6011.35s
+Loading error handling took 0.02s
+Loading script took 0.28s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 7928.46s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.05s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 7969.95s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 7982.43s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.09s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.30s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 7993.45s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8007.60s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.33s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8100.63s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.35s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.03s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8110.04s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8162.15s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.31s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.04s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8628.79s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/script.rpy", line 69, in script
+    while not _continuar:
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\execution.py", line 61, in check_infinite_loop
+    raise Exception("Possible infinite loop.")
+Exception: Possible infinite loop.
+
+While running game code:
+  File "game/script.rpy", line 69, in script
+    while not _continuar:
+Exception: Possible infinite loop.
+Resetting cache.
+Early init took 8710.99s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 70: expected '=' not found.
+    define esperar_continuar():
+                            ^
+
+File "game/script.rpy", line 77: expected statement.
+    esperar_continuar()
+                       ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 8776.22s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.34s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.06s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/script.rpy", line 79, in script
+    python:
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 80, in <module>
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  [Previous line repeated 964 more times]
+  File "game/script.rpy", line 74, in esperar_continuar
+    _continuar = renpy.show_screen("mini_runner_explain")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 1356, in show_screen
+    sls.add(_layer, d, _tag, zorder=_zorder, transient=_transient, keep_st=True, name=name)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\scenelists.py", line 441, in add
+    if not self.hide_or_replace(layer, remove_index, "replaced"):
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\scenelists.py", line 500, in hide_or_replace
+    if not oldsle.displayable._handles_event(prefix):
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 533, in _handles_event
+    self.update()
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/mini_explain.rpy", line 19, in execute
+    screen mini_runner_explain():
+  File "game/mini_explain.rpy", line 19, in execute
+    screen mini_runner_explain():
+  File "game/mini_explain.rpy", line 24, in execute
+    textbutton "Continuar" action Hide("mini_runner_explain")
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\ui.py", line 990, in _textbutton
+    text = renpy.text.text.Text(label, style=text_style, substitute=substitute, scope=scope, **text_kwargs)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\text\text.py", line 1738, in __init__
+    self.set_text(text, scope, substitute) # type: ignore
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\text\text.py", line 1868, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute) # type: ignore
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\substitutions.py", line 342, in substitute
+    s = renpy.translation.translate_string(s)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 579, in translate_string
+    return stl.translate(s)
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\translation\__init__.py", line 520, in translate
+    notags = re.sub(r"\{\#.*?\}", "", old)
+  File "lib/python3.9/re.py", line 210, in sub
+  File "lib/python3.9/re.py", line 291, in _compile
+RecursionError: maximum recursion depth exceeded while calling a Python object
+
+While running game code:
+  File "game/script.rpy", line 79, in script
+    python:
+  File "game/script.rpy", line 80, in <module>
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  File "game/script.rpy", line 76, in esperar_continuar
+    esperar_continuar()
+  [Previous line repeated 964 more times]
+  File "game/script.rpy", line 74, in esperar_continuar
+    _continuar = renpy.show_screen("mini_runner_explain")
+  File "game/mini_explain.rpy", line 19, in execute
+    screen mini_runner_explain():
+  File "game/mini_explain.rpy", line 19, in execute
+    screen mini_runner_explain():
+  File "game/mini_explain.rpy", line 24, in execute
+    textbutton "Continuar" action Hide("mini_runner_explain")
+RecursionError: maximum recursion depth exceeded while calling a Python object
+Resetting cache.
+Early init took 8915.73s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.36s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.04s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+
+Full traceback:
+  File "game/script.rpy", line 70, in script
+    while not _continuar:
+  File "E:\GITHUB\renpy-8.2.1-sdk\renpy\execution.py", line 61, in check_infinite_loop
+    raise Exception("Possible infinite loop.")
+Exception: Possible infinite loop.
+
+While running game code:
+  File "game/script.rpy", line 70, in script
+    while not _continuar:
+Exception: Possible infinite loop.
+Resetting cache.
+Early init took 9078.11s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call screen mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.49s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9119.15s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call screen mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.49s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9135.94s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call screen mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.44s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9149.71s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call screen mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.47s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9152.91s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call screen mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.44s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9216.69s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 69: invalid syntax
+    result = call mini_runner_explain
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9298.63s
+Loading error handling took 0.04s
+Loading script took 0.30s
+Loading save slot metadata took 0.06s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.15s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.52s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.05s
+Prepare screens took 0.22s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9308.41s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.05s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9505.24s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.10s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.05s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1
+Resetting cache.
+Early init took 9605.92s
+Loading error handling took 0.04s
+Loading script took 1.82s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.09s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\johan\\AppData\\Roaming/RenPy/backups\\EL_Jardin2':
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.45s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.13s
+Save screen analysis took 0.04s
+Prepare screens took 0.51s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1060 3GB/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.40'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+controller: '030000005e0400008e02000000007200' 'Xbox 360 Controller' 1

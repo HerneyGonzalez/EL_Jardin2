@@ -7,11 +7,11 @@ label mini_finder:
         # Configuración del fondo, duración del juego en segundos,
         # y parámetros del juego: sprites y posiciones de los objetos a recolectar
         $ hf_init("bg room", 5,
-            ("beer", 1013, 705, _("Libro")),
-            ("elf", 111, 660, _("Cinturón")),
+            ("beer", 950, 705, _("Libro")),
+            ("elf", 111, 660, _("Maquillaje")),
             ("flowers", 700, 370, _("Bolso")),
-            ("skull", 1200, 950, _("Zapatos")),
-            ("sprite", 1500, 380, _("Dinero")),
+            ("skull", 1200, 880, _("Zapatos")),
+            ("sprite", 1600, 550, _("Dinero")),
             # PARÁMETROS OPCIONALES:
             # Cambio de cursor al pasar el ratón
             mouse=True,

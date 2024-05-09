@@ -34,8 +34,10 @@ label start:
     #Acto 3, de la primera parte
     call p1_a3 from _call_p1_a3
     #Minijuego clicker
+    show screen mini_clicker_explain
     call mini_clicker from _call_mini_clicker
     call mini_clicker_win from _call_mini_clicker_win
+    hide screen mini_clicker_explain
     #Acto 4, de la primera parte
     call p1_a4 from _call_p1_a4
     #Acto 5, de la primera parte
@@ -47,7 +49,9 @@ label start:
     #Acto 1, de la segunda parte
     call p2_a1 from _call_p2_a1
     #Minijuego de buscar el objeto
+    show screen mini_finder_explain
     call mini_finder from _call_mini_finder
+    hide screen mini_finder_explain
     #Acto 2, de la segunda parte
     call p2_a2 from _call_p2_a2
     #Acto 3, de la segunda parte
@@ -59,7 +63,9 @@ label start:
     #Acto 1, de la tercera parte
     call p3_a1 from _call_p3_a1
     #Minijuego carrera
+    show screen mini_runner_explain
     call mini_runner from _call_mini_runner
+    hide screen mini_runner_explain
     #Acto 2, de la tercera parte
     call p3_a2 from _call_p3_a2
     #Acto 3, de la tercera parte

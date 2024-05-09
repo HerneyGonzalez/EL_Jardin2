@@ -158,7 +158,7 @@ label mini_runner:
                     raise renpy.IgnoreEvent()
 
         def display_score(st, at):
-            return Text(_("Mangos: ") + "%d" % feed_the_dragon.score, size=40, color="#00cc00", outlines=[ (4, "#006600", 0, 0) ]), .1
+            return Text(_("Flores: ") + "%d" % feed_the_dragon.score, size=40, color="#00cc00", outlines=[ (4, "#006600", 0, 0) ]), .1
 
         def display_player_lives(st, at):
             return Text(_("Vidas: ") + "%d" % feed_the_dragon.player_lives, size=40, color="#00cc00", outlines=[ (4, "#006600", 0, 0) ]), .1
@@ -186,7 +186,7 @@ label mini_runner:
 
         add DynamicDisplayable(display_player_lives) xpos (1920 - 240) xanchor 0.5 ypos 25
 
-        text _("Recoje mangos de camino a Ibague"):
+        text _("Recoje flores de camino a Ibague"):
             xalign 0.5
             ypos 25
             size 40
