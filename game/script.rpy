@@ -87,7 +87,9 @@ label start:
     #Acto 11, de la tercera parte
     call p3_a11 from _call_p3_a11
     #Minijuego memoria
+    show screen mini_memory_explain
     call mini_memoria from _call_mini_memoria
+    hide screen mini_memory_explain
     
 
 
