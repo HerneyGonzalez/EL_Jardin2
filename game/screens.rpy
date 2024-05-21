@@ -246,7 +246,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.495
             yalign 0.96
 
             textbutton _("Atrás") action Rollback()
@@ -256,7 +256,7 @@ screen quick_menu():
             textbutton _("Guardar") action ShowMenu('save')
             textbutton _("Guardar R.") action QuickSave()
             textbutton _("Cargar R.") action QuickLoad()
-            textbutton _("Prefs.") action ShowMenu('preferences')
+            textbutton _("Opciones") action ShowMenu('preferences')
 
 
 ## Este código asegura que la pantalla 'quick_menu' se muestra en el juego,
@@ -292,7 +292,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.6
 
         spacing gui.navigation_spacing
 
@@ -551,15 +551,19 @@ screen about():
         style_prefix "about"
 
         vbox:
-
-            label "[config.name!t]"
             text _("Versión [config.version!t]\n")
+            text _("\nLa novela visual {a=https://mrkwan.itch.io/el-jardin/}El Jardín{/a} fue desarrollada por:\n + Johann Kwan.\n + Herney Gonzalez.\n + Santiago Dias.")
+            text _("\nRecursos graficos:\n + {a=https://krita.org/es/}Krita.{/a}\n + {a=https://labs.openai.com/}Dall-E 2.{/a}\n + {a=https://stablediffusionweb.com/}Stable Diffusion.{/a}\n + {a=https://www.bing.com/images/create/}Bing Creator.{/a}")
+            text _("\nRecursos de audio: {a=https://freemusicarchive.org/home/}Free Music Archive{/a}")
+            label "[config.name!t]"
+            
 
             ## 'gui.about' se ajusta habitualmente en 'options.rpy'.
             if gui.about:
                 text "[gui.about!t]\n"
+        
 
-            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Hecho con el motor de juego: {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 style about_label is gui_label
@@ -583,17 +587,17 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Guardar"))
+    use file_slots(_("Guardar"), 5, 3,2)  # Pasa el número de páginas y la configuración de filas y columnas
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Cargar"))
+    use file_slots(_("Cargar"), 5, 3, 2)  # Pasa el número de páginas y la configuración de filas y columnas
 
 
-screen file_slots(title):
+screen file_slots(title, num_pages, num_cols, num_rows):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Página {}"), auto=_("Grabación automática"), quick=_("Grabación rápida"))
 
@@ -605,7 +609,7 @@ screen file_slots(title):
             ## botones.
             order_reverse True
 
-            ## El nombre de la pagina, se puede editar haciendo clic en el
+            ## El nombre de la página, se puede editar haciendo clic en el
             ## botón.
             button:
                 style "page_label"
@@ -619,7 +623,7 @@ screen file_slots(title):
                     value page_name_value
 
             ## La cuadrícula de huecos de guardado.
-            grid gui.file_slot_cols gui.file_slot_rows:
+            grid num_cols num_rows:
                 style_prefix "slot"
 
                 xalign 0.5
@@ -627,7 +631,7 @@ screen file_slots(title):
 
                 spacing gui.slot_spacing
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                for i in range(num_cols * num_rows):
 
                     $ slot = i + 1
 
@@ -663,11 +667,12 @@ screen file_slots(title):
                 if config.has_quicksave:
                     textbutton _("{#quick_page}R") action FilePage("quick")
 
-                ## range(1, 10) da los números del 1 al 9.
-                for page in range(1, 10):
+                ## range(1, num_pages + 1) da los números de las páginas.
+                for page in range(1, num_pages + 1):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+                ##textbutton _(">") action FilePageNext()
+
 
 
 style page_label is gui_label
@@ -1052,7 +1057,11 @@ screen mouse_help():
         text _("Accede al menú del juego.")
 
     hbox:
-        label _("Rueda del ratón arriba\nClic en lado de retroceso")
+        label _("Rueda del ratón arriba")
+        text _("Retrocede al diálogo anterior.")
+    
+    hbox:
+        label _("Clic en lado de retroceso")
         text _("Retrocede al diálogo anterior.")
 
     hbox:
@@ -1423,7 +1432,7 @@ screen quick_menu():
             textbutton _("Atrás") action Rollback()
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menú") action ShowMenu()
+            textbutton _("Opciones") action ShowMenu()
 
 
 style window:

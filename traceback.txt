@@ -1,37 +1,59 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 62, in script call
-    call mini_runner from _call_mini_runner
-  File "game/mini_runner.rpy", line 228, in script
-    call screen feed_the_dragon
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/mini_runner.rpy", line 188, in execute
-    screen feed_the_dragon():
-  File "game/mini_runner.rpy", line 188, in execute
-    screen feed_the_dragon():
-  File "game/mini_runner.rpy", line 210, in execute
-    imagebutton idle up_button_img action Function(move_up) xpos 50 ypos 400
-Exception: Not a displayable: <Surface(100x50x32)>
+  File "game/screens.rpy", line 593, in execute
+    screen load():
+  File "game/screens.rpy", line 593, in execute
+    screen load():
+  File "game/screens.rpy", line 597, in execute
+    use file_slots(_("Cargar"), 5, 3, 2)  # Pasa el número de páginas y la configuración de filas y columnas
+  File "game/screens.rpy", line 600, in execute
+    screen file_slots(title, num_pages, num_cols, num_rows):
+  File "game/screens.rpy", line 600, in execute
+    screen file_slots(title, num_pages, num_cols, num_rows):
+  File "game/screens.rpy", line 604, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 415, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 415, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 424, in execute
+    frame:
+  File "game/screens.rpy", line 427, in execute
+    hbox:
+  File "game/screens.rpy", line 433, in execute
+    frame:
+  File "game/screens.rpy", line 436, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 467, in execute
+    transclude
+  File "game/screens.rpy", line 604, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 606, in execute
+    fixed:
+  File "game/screens.rpy", line 654, in execute
+    hbox:
+  File "game/screens.rpy", line 674, in execute
+    textbutton _(">") action If(
+  File "game/screens.rpy", line 674, in keywords
+    textbutton _(">") action If(
+  File "game/screens.rpy", line 675, in <module>
+    FilePageNameInputValue.current_page < 5,
+AttributeError: type object 'FilePageNameInputValue' has no attribute 'current_page'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 62, in script call
-    call mini_runner from _call_mini_runner
-  File "game/mini_runner.rpy", line 228, in script
-    call screen feed_the_dragon
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 1968, in execute
-    self.call("execute")
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 1950, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\statements.py", line 349, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\exports.py", line 3413, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
@@ -44,6 +66,7 @@ Full traceback:
     d.visit_all(callback, seen)
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
     d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 480, in visit_all
     callback(self)
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in <lambda>
@@ -52,21 +75,47 @@ Full traceback:
     self.update()
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
     self.screen.function(**self.scope)
-  File "game/mini_runner.rpy", line 188, in execute
-    screen feed_the_dragon():
-  File "game/mini_runner.rpy", line 188, in execute
-    screen feed_the_dragon():
-  File "game/mini_runner.rpy", line 210, in execute
-    imagebutton idle up_button_img action Function(move_up) xpos 50 ypos 400
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ui.py", line 957, in _imagebutton
-    return renpy.display.behavior.ImageButton(
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\behavior.py", line 1241, in __init__
-    idle_=renpy.easy.displayable(idle_image),
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\easy.py", line 145, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: <Surface(100x50x32)>
+  File "game/screens.rpy", line 593, in execute
+    screen load():
+  File "game/screens.rpy", line 593, in execute
+    screen load():
+  File "game/screens.rpy", line 597, in execute
+    use file_slots(_("Cargar"), 5, 3, 2)  # Pasa el número de páginas y la configuración de filas y columnas
+  File "game/screens.rpy", line 600, in execute
+    screen file_slots(title, num_pages, num_cols, num_rows):
+  File "game/screens.rpy", line 600, in execute
+    screen file_slots(title, num_pages, num_cols, num_rows):
+  File "game/screens.rpy", line 604, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 415, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 415, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0):
+  File "game/screens.rpy", line 424, in execute
+    frame:
+  File "game/screens.rpy", line 427, in execute
+    hbox:
+  File "game/screens.rpy", line 433, in execute
+    frame:
+  File "game/screens.rpy", line 436, in execute
+    if scroll == "viewport":
+  File "game/screens.rpy", line 467, in execute
+    transclude
+  File "game/screens.rpy", line 604, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 606, in execute
+    fixed:
+  File "game/screens.rpy", line 654, in execute
+    hbox:
+  File "game/screens.rpy", line 674, in execute
+    textbutton _(">") action If(
+  File "game/screens.rpy", line 674, in keywords
+    textbutton _(">") action If(
+  File "game/screens.rpy", line 675, in <module>
+    FilePageNameInputValue.current_page < 5,
+AttributeError: type object 'FilePageNameInputValue' has no attribute 'current_page'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.0.24012702
- 
-Fri May  3 16:37:30 2024
+ 2.10.0-alpha
+Tue May 21 17:55:22 2024

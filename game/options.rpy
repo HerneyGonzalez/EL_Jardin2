@@ -4,7 +4,8 @@
 ## Las líneas que empiezan con doble '#' son comentarios, no deben ser
 ## descomentadas. Las líneas que empiezan con simple '#' son código comentado,
 ## puedes descomentarlas si es apropiado.
-
+define gui.file_slot_cols = 3  # Número de columnas
+define gui.file_slot_rows = 2  # Número de filas
 
 ## Básico ######################################################################
 
@@ -24,7 +25,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = ""
+define config.version = "2.10.0-alpha"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
