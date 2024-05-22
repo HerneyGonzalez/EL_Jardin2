@@ -1,31 +1,21 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {weight=500} in '{size=+200}{color=#000000}{weight=500}¡Ufff, a correr!'.:
-  File "game/script.rpy", line 61, in script call
-    call mini_finder from _call_mini_finder
-  File "game/mini_finder.rpy", line 43, in script
-    centered "{size=+200}{color=#000000}{weight=500}¡Ufff, a correr!"
-Exception: Unknown text tag 'weight=500'
+While running game code:
+TypeError: can't multiply sequence by non-int of type 'float'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 61, in script call
-    call mini_finder from _call_mini_finder
-  File "game/mini_finder.rpy", line 43, in script
-    centered "{size=+200}{color=#000000}{weight=500}¡Ufff, a correr!"
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
-    display_say(who,
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
@@ -56,19 +46,21 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\layout.py", line 1361, in render
-    surf = render(child,
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\display\layout.py", line 1121, in render
+    surf = render(d, width - x, rh, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
   File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\text.py", line 2276, in render
     virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\text.py", line 640, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\text.py", line 1394, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'weight=500'
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\text.py", line 676, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\text.py", line 268, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample, self.shaper, self.instance, self.axis)
+  File "C:\Users\johan\Downloads\renpy-8.2.0-sdk\renpy\text\font.py", line 748, in get_font
+    rv = hbfont.HBFont(face, int(size * scale), bold, italics, outline, antialias, vertical, hinting, instance, axis) # @UndefinedVariable
+TypeError: can't multiply sequence by non-int of type 'float'
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.0.24012702
- 2.10.0-alpha
-Tue May 21 19:08:58 2024
+ 2.11.1-alpha
+Tue May 21 20:33:39 2024

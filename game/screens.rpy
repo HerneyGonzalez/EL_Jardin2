@@ -318,10 +318,12 @@ screen navigation():
 
         textbutton _("Acerca de") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+        textbutton _("Controles") action ShowMenu("help")
+
+        ##if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
+            ##textbutton _("Controles") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -400,6 +402,9 @@ style main_menu_title:
     properties gui.text_properties("title")
 
 style main_menu_version:
+    ypos 5.1
+    xpos -6.2
+    color "#ffffff"
     properties gui.text_properties("version")
 
 
@@ -968,7 +973,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Ayuda"), scroll="viewport"):
+    use game_menu(_("Controles"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -982,6 +987,8 @@ screen help():
 
                 if GamepadExists():
                     textbutton _("Mando") action SetScreenVariable("device", "gamepad")
+                
+                textbutton _("Panel táctil") action SetScreenVariable("device", "touchpad")
 
             if device == "keyboard":
                 use keyboard_help
@@ -989,6 +996,8 @@ screen help():
                 use mouse_help
             elif device == "gamepad":
                 use gamepad_help
+            elif device == "touchpad":
+                use touchpad_help
 
 
 screen keyboard_help():
@@ -1067,6 +1076,12 @@ screen mouse_help():
     hbox:
         label _("Rueda del ratón abajo")
         text _("Avanza hacia el diálogo siguiente.")
+
+screen touchpad_help():
+
+    hbox:
+        label _("Toque y deslizar")
+        text _("Avanzar al siguiente diálogo. \nNavegar por la interfaz.\nAcceder al menú del juego.\nActiva/desactiva 'Saltar' de diálogo.\nActiva/desactiva el modo de avance 'Auto' de diálogo.\nRetrocede al diálogo anterior presionando 'Atrás'.")
 
 
 screen gamepad_help():
