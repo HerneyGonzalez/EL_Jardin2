@@ -4,16 +4,16 @@ label p3_a3:
     carp "Quedé embarazada a los quince días. Era feliz. Feliz de sentir a esa criaturita creciéndome por dentro. "
 
 
-    show car_n_-18
-    show car_n_-18:
+    show car_bestido
+    show car_bestido:
         subpixel True pos (0.2, 1.1) xzoom 0.9 yzoom 0.9 
     with dissolve
 
     stop music
     play music "audio/triste.mp3" volume 0.2
     scene bg_casa_ibague_gris
-    show car_n_-18
-    show car_n_-18:
+    show car_bestido
+    show car_bestido:
         subpixel True pos (0.2, 1.1) xzoom 0.9 yzoom 0.9 
     voice "voz124.mp3"
     carp "Pero esa ilusión se me murió de bronconeumonía a los tres meses."

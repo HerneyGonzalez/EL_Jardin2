@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 1: expected statement.
-    config.developer = True
-                     ^
+File "game/mini_finder.rpy", line 43: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+                car "{size=+150}{color=#000000}"¡Ufff, a correr!"
 
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat May  4 11:44:51 2024
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Tue May 21 19:16:21 2024

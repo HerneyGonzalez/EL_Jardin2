@@ -659,7 +659,7 @@ screen file_slots(title, num_pages, num_cols, num_rows):
 
                 spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious()
+                ##textbutton _("<") action FilePagePrevious()
 
                 if config.has_autosave:
                     textbutton _("{#auto_page}A") action FilePage("auto")

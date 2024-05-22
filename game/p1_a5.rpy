@@ -10,11 +10,11 @@ label p1_a5:
     
     hermanos "Papá esa niña la tiene que poner es a trabajar y que deje de comer tanto libro"
     voice "voz55.mp3"
-    "Por ese tipo de comentarios me empece a aburrir en el Tolima."
+    carp "Por ese tipo de comentarios me empece a aburrir en el Tolima."
     voice "voz56.mp3"
-    "Eso de aprender en los libros sí era muy importante para mí"
+    carp "Eso de aprender en los libros sí era muy importante para mí"
     voice "voz57.mp3"
-    "Yo quería ser más persona. Para mí ellos eran unos burros"
+    carp "Yo quería ser más persona. Para mí ellos eran unos burros"
 
     show papa_formal
     
@@ -36,7 +36,7 @@ return
 
 label irse:
 voice "voz59.mp3"
-"Yo sé que eso le dolió, porque cuando se despidió no me quería mirar, y cuando al final le tocó, le vi una apagadera en los ojos."
+carp "Yo sé que eso le dolió, porque cuando se despidió no me quería mirar, y cuando al final le tocó, le vi una apagadera en los ojos."
 hide papa_formal
 with dissolve
 hide car_n_bestido

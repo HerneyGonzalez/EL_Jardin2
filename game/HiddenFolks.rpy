@@ -59,8 +59,7 @@ init python:
         ("images/c/hand1.png", 2, 10), ("images/c/hand2.png", 2, 10),
         ("images/c/hand2.png", 2, 10), ("images/c/hand3.png", 2, 10),
         ("images/c/hand3.png", 2, 10), ("images/c/hand2.png", 2, 10),
-        ("images/c/hand2.png", 2, 10)],
-        "finger": [("images/c/finger.png", 2, 10)]}
+        ("images/c/hand2.png", 2, 10)], "finger": [("images/c/finger.png", 2, 10)]}
 
     # координаты мышки
     def hf_hint_at_f(trans, st, at):

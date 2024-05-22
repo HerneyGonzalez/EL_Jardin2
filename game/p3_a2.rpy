@@ -17,8 +17,8 @@ label p3_a2:
         subpixel True pos (0.1, 1.5) zpos 0.0 xzoom 1.5 yzoom 1.5 
     with dissolve
 
-    show car_n_-18
-    show car_n_-18:
+    show car_bestido
+    show car_bestido:
         subpixel True pos (0.2, 1.1) xzoom 0.9 yzoom 0.9 
     with dissolve
 

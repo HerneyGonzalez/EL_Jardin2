@@ -14,8 +14,8 @@ label mini_runner:
                 # Configura los valores del juego
                 self.PLAYER_WIDTH = 250
                 self.PLAYER_HEIGHT = 200
-                self.COIN_WIDTH = 128
-                self.COIN_HEIGHT = 128
+                self.COIN_WIDTH = 256
+                self.COIN_HEIGHT = 256
                 self.PLAYER_STARTING_LIVES = 5
                 self.PLAYER_VELOCITY = 50
                 self.COIN_STARTING_VELOCITY = 10

@@ -40,10 +40,11 @@ label mini_finder:
 
         # Resultados
         if hf_return == 0:
-            centered "{size=+100}¡Ufff, a correr!"
+            car "¡Ufff, a correr!"
+
         else:
-            #define gui.text_outlines = [(4, "0124", 0, 0), (3, "0124", 0, 0), (1, "0124", 0, 0), (1, "0124", 0, 0)]
-            centered "{size=+100}¿Dónde está todo?\nMe faltaron [hf_return] cosas."
+            # define gui.text_outlines = [(4, "0124", 0, 0), (3, "0124", 0, 0), (1, "0124", 0, 0), (1, "0124", 0, 0)]
+            car "¿Dónde está todo?\nMe faltaron [hf_return] cosas."
             jump mini_finder
 
         # Ocultar el juego

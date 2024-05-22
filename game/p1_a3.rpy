@@ -38,7 +38,8 @@ label p1_a3:
     voice "voz35.mp3"
     mama "Siempre se me presentaba sin armas, con su ropa de civil, y ella, cuando él pasaba, pensaba que no volvería a verlo. "
     voice "voz36.mp3"
-    mama "Hasta que una vez, cuando ya se había entregado, se le presentó en forma de retirado. Él decía, por coquetearle a mi mamá, que la culpa de esa entrega había sido de ella, por tener esos ojos como los tenía. "
+    mama "Hasta que una vez, cuando ya se había entregado, se me presentó en forma de retirado. "
+    mama "Él me decía, por coquetearme, que la culpa de esa entrega había sido de yo, por tener esos ojos como los tenía. "
 return
 
 
