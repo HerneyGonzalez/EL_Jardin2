@@ -423,62 +423,77 @@ define gui.language = "unicode"
 
 init python:
 
-    ## Esto aumenta el tamaño de los bottones rápidos para facilitar su acceso
+    ## Detecta si la resolución es la de una tablet o un teléfono.
+    def is_tablet_or_phone():
+        width = renpy.config.screen_width
+        height = renpy.config.screen_height
+        return width >= 600
+
+    ## Esto aumenta el tamaño de los botones rápidos para facilitar su acceso
     ## en tablets y teléfonos.
     @gui.variant
     def touch():
 
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
+        if is_tablet_or_phone():
+            gui.quick_button_borders = Borders(60, 21, 60, 0)
+            gui.quick_button_text_size = 30
+    
+            gui.quick_menu_vbox_xalign = 0.5
+            gui.quick_menu_vbox_yalign = 0.7
 
     ## Esto cambia el tamaño y espaciado de varios elementos de la GUI para
     ## asegurar que sean fácilmente visibles en los teléfonos.
     @gui.variant
     def small():
 
-        ## Tamaños de letra.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
+        if is_tablet_or_phone():
+            ## Tamaños de letra.
+            gui.text_size = 43
+            gui.name_text_size = 54
+            gui.notify_text_size = 38
+            gui.interface_text_size = 45
+            gui.button_text_size = 45
+            gui.label_text_size = 51
 
-        ## Ajusta la colocación de la caja de texto.
-        gui.textbox_height = 360
-        gui.name_xpos = 195
-        gui.dialogue_xpos = 180
-        gui.dialogue_width = 1650
+            ## Ajusta la colocación de la caja de texto.
+            gui.textbox_height = 360
+            gui.name_xpos = 195
+            gui.dialogue_xpos = 180
+            gui.dialogue_width = 1650
 
-        ## Cambia el tamaño y espaciado de varios elementos.
-        gui.slider_size = 54
+            ## Cambia el tamaño y espaciado de varios elementos.
+            gui.slider_size = 54
 
-        gui.choice_button_width = 1860
-        gui.choice_button_text_size = 45
+            gui.choice_button_width = 1860
+            gui.choice_button_text_size = 45
 
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
+            gui.navigation_spacing = 30
+            gui.pref_button_spacing = 15
 
-        gui.history_height = 285
-        gui.history_text_width = 1035
+            gui.history_height = 285
+            gui.history_text_width = 1035
 
-        gui.quick_button_text_size = 30
+            ## Aumenta el tamaño de los botones rápidos y su texto
+            gui.quick_button_borders = Borders(60, 21, 60, 15)
+            gui.quick_button_text_size = 30
 
-        ## Distribución de botones de archivo.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+            ## Distribución de botones de archivo.
+            gui.file_slot_cols = 2
+            gui.file_slot_rows = 2
 
-        ## Modo-NVL
-        gui.nvl_height = 255
+            ## Modo-NVL
+            gui.nvl_height = 255
 
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
+            gui.nvl_name_width = 458
+            gui.nvl_name_xpos = 488
 
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
+            gui.nvl_text_width = 1373
+            gui.nvl_text_xpos = 518
+            gui.nvl_text_ypos = 8
 
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
+            gui.nvl_thought_width = 1860
+            gui.nvl_thought_xpos = 30
 
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
+            gui.nvl_button_width = 1860
+            gui.nvl_button_xpos = 30
+

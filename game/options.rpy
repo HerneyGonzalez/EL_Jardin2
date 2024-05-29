@@ -25,7 +25,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "2.11.1-alpha"
+define config.version = "2.11.2-alpha"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -103,6 +103,29 @@ define config.end_game_transition = None
 ## Si es "auto", la ventana se esconde antes de las sentencias 'scene' y se
 ## muestra de nuevo cuando hay diálogo que presentar.
 ##
+
+##define config.mouse = {'default' : [('images/c/default.png', 0 ,0)]}
+
+init python:
+    # Configuración de cursores personalizados
+    config.mouse = {
+        "default": [("images/c/default.png", 1, 1)],
+        "hand": [
+            ("images/c/hand1.png", 2, 10),
+            ("images/c/hand1.png", 2, 10),
+            ("images/c/hand1.png", 2, 10),
+            ("images/c/hand1.png", 2, 10),
+            ("images/c/hand2.png", 2, 10),
+            ("images/c/hand2.png", 2, 10),
+            ("images/c/hand3.png", 2, 10),
+            ("images/c/hand3.png", 2, 10),
+            ("images/c/hand2.png", 2, 10),
+            ("images/c/hand2.png", 2, 10)
+        ],
+        "finger": [("images/c/finger.png", 2, 10)]
+    }
+
+##define config.mouse = {'default' : [('images/c/default.png', 0 ,0)]}
 ## Una vez comenzado el juego, esto se puede ajustar con las sentencias "window
 ## show", "window hide", y "window auto".
 

@@ -626,6 +626,7 @@ screen file_slots(title, num_pages, num_cols, num_rows):
                 input:
                     style "page_label_text"
                     value page_name_value
+                    length 15
 
             ## La cuadrícula de huecos de guardado.
             grid num_cols num_rows:
@@ -1442,7 +1443,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 0.95
+            yalign 0.96
 
             textbutton _("Atrás") action Rollback()
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)

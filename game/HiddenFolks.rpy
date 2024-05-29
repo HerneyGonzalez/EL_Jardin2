@@ -52,14 +52,6 @@ init python:
     # автоматическое объявление спрайтов (включая webp)
     images_auto()
 
-    # курсоры
-    config.mouse = {"default": [("images/c/default.png", 1, 1)],
-        "hand": [("images/c/hand1.png", 2, 10),
-        ("images/c/hand1.png", 2, 10), ("images/c/hand1.png", 2, 10),
-        ("images/c/hand1.png", 2, 10), ("images/c/hand2.png", 2, 10),
-        ("images/c/hand2.png", 2, 10), ("images/c/hand3.png", 2, 10),
-        ("images/c/hand3.png", 2, 10), ("images/c/hand2.png", 2, 10),
-        ("images/c/hand2.png", 2, 10)], "finger": [("images/c/finger.png", 2, 10)]}
 
     # координаты мышки
     def hf_hint_at_f(trans, st, at):
