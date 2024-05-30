@@ -557,7 +557,7 @@ screen about():
 
         vbox:
             text _("Versión [config.version!t]\n")
-            text _("\nLa novela visual {a=https://mrkwan.itch.io/el-jardin/}El Jardín{/a} fue desarrollada por:\n + Johann Kwan.\n + Herney Gonzalez.\n + Santiago Dias.")
+            text _("\nLa novela visual {a=https://mrkwan.itch.io/el-jardin/}El Jardín{/a} fue desarrollada por:\n + Johann Kwan.\n + Herney Gonzalez.\n + Santiago Diaz.")
             text _("\nRecursos graficos:\n + {a=https://krita.org/es/}Krita.{/a}\n + {a=https://labs.openai.com/}Dall-E 2.{/a}\n + {a=https://stablediffusionweb.com/}Stable Diffusion.{/a}\n + {a=https://www.bing.com/images/create/}Bing Creator.{/a}")
             text _("\nRecursos de audio: {a=https://freemusicarchive.org/home/}Free Music Archive{/a}")
             label "[config.name!t]"
